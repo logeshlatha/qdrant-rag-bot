@@ -32,7 +32,7 @@ qdrant = init_qdrant()
 # -------------------- DATA INGEST --------------------
 @st.cache_data
 def load_and_index_data():
-    data_frame = pd.read_csv("top_rated_wines.csv")  # make sure this file is in your repo
+    data_frame = pd.read_csv("https://github.com/logeshlatha/qdrant-rag-bot/blob/main/top_rated_wines.csv")  # make sure this file is in your repo
     data_frame = data_frame[data_frame['variety'].notna()]
 
     # Create collection if not exists
@@ -119,3 +119,4 @@ with st.sidebar:
     st.write("This chatbot uses Qdrant + Sentence Transformers + OpenAI to recommend wines.")
     st.divider()
     st.write("**Data Source:** `top_rated_wines.csv`")
+
