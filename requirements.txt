@@ -3,5 +3,4 @@ pandas
 qdrant-client
 sentence-transformers
 openai>=1.35
-tf-keras
 dotenv
