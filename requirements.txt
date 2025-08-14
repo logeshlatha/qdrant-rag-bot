@@ -1,6 +1,7 @@
 streamlit>=1.37
-pandas
-qdrant-client
 sentence-transformers
 openai>=1.35
 dotenv
+qdrant-client==1.9.0
+pandas==2.2.2
+
